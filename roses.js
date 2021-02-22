@@ -51,7 +51,7 @@ function init() {
 
    function createBall() {
         const ORIGINAL_SIZE = 120;
-        const SIZE = Math.floor(Math.random()*100) + 100;
+        const SIZE = Math.floor(Math.random()*100) + 50;
         const ball = Bodies.circle(Math.round(Math.random() * width), -30, 29, {
             angle: Math.PI * (Math.random() * 2 - 1),
             friction: 0.001,
@@ -70,7 +70,7 @@ function init() {
 
         setTimeout(() => {
             World.remove(engine.world, ball);
-        }, 50000);
+        }, 30000);
 
         return ball;
     }
@@ -83,7 +83,7 @@ function init() {
         const ball2 = createBall();
         World.add(engine.world, [ball2]);
     };
-    setInterval(handleClick, 100)
+    setInterval(handleClick, 200)
 }
 
 init();
