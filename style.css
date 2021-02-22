@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Parisienne', cursive;;
+}
+body{ 
+  background-color: #f7e5b5;
+}
+.faces {
+  display: block;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  font-size: 5vmin;
+  color:rgb(252, 101, 96);
+  transform: translateX(-50.3%) translateY(-52%);
+}
+div {
+    margin-top: 20vh;
+    text-align: center;
+}
+
