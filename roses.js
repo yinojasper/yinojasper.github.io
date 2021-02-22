@@ -70,7 +70,7 @@ function init() {
 
         setTimeout(() => {
             World.remove(engine.world, ball);
-        }, 30000);
+        }, 50000);
 
         return ball;
     }
@@ -83,7 +83,7 @@ function init() {
         const ball2 = createBall();
         World.add(engine.world, [ball2]);
     };
-    setInterval(handleClick, 300)
+    setInterval(handleClick, 100)
 }
 
 init();
